@@ -1,0 +1,125 @@
+package org.leetcode.hard;
+
+
+/**
+ * <b>#3548 - Equal Sum Grid Partition II</b>
+ *
+ * <p><b>Difficulty:</b> Hard</p>
+ * <p><b>Category:</b> Array, Hash Table, Matrix, Enumeration, Prefix Sum</p>
+ *
+ * <h2>Problem Description</h2>
+ * <pre>
+ * You are given an m x n matrix grid of positive integers. Your task is to determine if it is possible to make either one horizontal or one vertical cut on the grid such that:
+ *
+ *
+ * Each of the two resulting sections formed by the cut is non-empty.
+ *
+ * The sum of elements in both sections is equal, or can be made equal by discounting at most one single cell in total (from either section).
+ *
+ * If a cell is discounted, the rest of the section must remain connected.
+ *
+ * Return true if such a partition exists; otherwise, return false.
+ *
+ *
+ * Note: A section is connected if every cell in it can be reached from any other cell by moving up, down, left, or right through other cells in the section.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: grid = [[1,4],[2,3]]
+ *
+ *
+ * Output: true
+ *
+ *
+ * Explanation:
+ *
+ *
+ * A horizontal cut after the first row gives sums 1 + 4 = 5 and 2 + 3 = 5, which are equal. Thus, the answer is true.
+ *
+ * Example 2:
+ *
+ * Input: grid = [[1,2],[3,4]]
+ *
+ *
+ * Output: true
+ *
+ *
+ * Explanation:
+ *
+ *
+ * A vertical cut after the first column gives sums 1 + 3 = 4 and 2 + 4 = 6.
+ *
+ * By discounting 2 from the right section (6 - 2 = 4), both sections have equal sums and remain connected. Thus, the answer is true.
+ *
+ * Example 3:
+ *
+ * Input: grid = [[1,2,4],[2,3,5]]
+ *
+ *
+ * Output: false
+ *
+ *
+ * Explanation:
+ *
+ *
+ * A horizontal cut after the first row gives 1 + 2 + 4 = 7 and 2 + 3 + 5 = 10.
+ *
+ * By discounting 3 from the bottom section (10 - 3 = 7), both sections have equal sums, but they do not remain connected as it splits the bottom section into two parts ([2] and [5]). Thus, the answer is false.
+ *
+ * Example 4:
+ *
+ * Input: grid = [[4,1,8],[3,2,6]]
+ *
+ *
+ * Output: false
+ *
+ *
+ * Explanation:
+ *
+ *
+ * No valid cut exists, so the answer is false.
+ *
+ *
+ *
+ * Constraints:
+ *
+ *
+ * 1 &lt;= m == grid.length &lt;= 105
+ *
+ * 1 &lt;= n == grid[i].length &lt;= 105
+ *
+ * 2 &lt;= m * n &lt;= 105
+ *
+ * 1 &lt;= grid[i][j] &lt;= 105
+ * </pre>
+ *
+ * <h2>Hints to Solve</h2>
+ * Hint 1: In a grid (or any subgrid), when can a section be disconnected? Can disconnected components occur if the section spans more than one row and more than one column?
+ * Hint 2: Handle single rows or single columns separately. For all other partitions, maintain the sums and value frequencies of each section to check whether removing at most one element from one section can make the two sums equal.
+ *
+ * <h2>Approach</h2>
+ * Think about the category (Array, Hash Table, Matrix, Enumeration, Prefix Sum).
+ *
+ * @see <a href="https://leetcode.com/problems/equal-sum-grid-partition-ii/">LeetCode #3548</a>
+ */
+public class EqualSumGridPartitionIi {
+
+    /**
+     * Solves the problem and Solve.
+     *
+     * @param input the input (Object)
+     * @return the computed Object result
+     */
+    public Object solve(Object input) {
+        throw new UnsupportedOperationException("Not yet implemented: Equal Sum Grid Partition II");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("=== EqualSumGridPartitionIi ===");
+        EqualSumGridPartitionIi sol = new EqualSumGridPartitionIi();
+        System.out.println(sol.solve(null));
+    }
+}

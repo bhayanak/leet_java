@@ -1,0 +1,87 @@
+package org.leetcode.medium;
+
+
+/**
+ * <b>#1504 - Count Submatrices With All Ones</b>
+ *
+ * <p><b>Difficulty:</b> Medium</p>
+ * <p><b>Category:</b> Array, Dynamic Programming, Stack, Matrix, Monotonic Stack</p>
+ *
+ * <h2>Problem Description</h2>
+ * <pre>
+ * Given an m x n binary matrix mat, return the number of submatrices that have all ones.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: mat = [[1,0,1],[1,1,0],[1,1,0]]
+ * Output: 13
+ * Explanation: 
+ * There are 6 rectangles of side 1x1.
+ * There are 2 rectangles of side 1x2.
+ * There are 3 rectangles of side 2x1.
+ * There is 1 rectangle of side 2x2. 
+ * There is 1 rectangle of side 3x1.
+ * Total number of rectangles = 6 + 2 + 3 + 1 + 1 = 13.
+ *
+ * Example 2:
+ *
+ * Input: mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]
+ * Output: 24
+ * Explanation: 
+ * There are 8 rectangles of side 1x1.
+ * There are 5 rectangles of side 1x2.
+ * There are 2 rectangles of side 1x3. 
+ * There are 4 rectangles of side 2x1.
+ * There are 2 rectangles of side 2x2. 
+ * There are 2 rectangles of side 3x1. 
+ * There is 1 rectangle of side 3x2. 
+ * Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
+ *
+ *
+ *
+ * Constraints:
+ *
+ *
+ * 1 &lt;= m, n &lt;= 150
+ *
+ * mat[i][j] is either 0 or 1.
+ * </pre>
+ *
+ * <h2>Hints to Solve</h2>
+ * Hint 1: For each row i, create an array nums where:  if mat[i][j] == 0 then nums[j] = 0 else nums[j] = nums[j-1] +1.
+ * Hint 2: In the row i, number of rectangles between column j and k(inclusive) and ends in row i, is equal to SUM(min(nums[j, .. idx])) where idx go from j to k.  Expected solution is O(n^3).
+ *
+ * <h2>Approach</h2>
+ * Think about the category (Array, Dynamic Programming, Stack, Matrix, Monotonic Stack).
+ * Start brute-force, then optimise: sorting, hashing, two pointers,
+ * sliding window, binary search, backtracking, DP, or graph traversal.
+ *
+ * <h2>Complexity</h2>
+ * Time: see implementation  |  Space: see implementation
+ *
+ * @see <a href="https://leetcode.com/problems/count-submatrices-with-all-ones/">LeetCode #1504</a>
+ */
+public class CountSubmatricesWithAllOnes {
+
+    /**
+     * Solves the problem and Solve.
+     *
+     * @param input the input (Object)
+     * @return the computed Object result
+     */
+    public Object solve(Object input) {
+        throw new UnsupportedOperationException("Not yet implemented: Count Submatrices With All Ones");
+    }
+
+    /**
+     * Runs sample test cases.
+     */
+    public static void main(String[] args) {
+        System.out.println("=== CountSubmatricesWithAllOnes ===");
+        CountSubmatricesWithAllOnes sol = new CountSubmatricesWithAllOnes();
+        System.out.println(sol.solve(null));
+    }
+}

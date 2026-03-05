@@ -1,0 +1,85 @@
+package org.leetcode.hard;
+
+
+/**
+ * <b>#2448 - Minimum Cost to Make Array Equal</b>
+ *
+ * <p><b>Difficulty:</b> Hard</p>
+ * <p><b>Category:</b> Array, Binary Search, Greedy, Sorting, Prefix Sum</p>
+ *
+ * <h2>Problem Description</h2>
+ * <pre>
+ * You are given two 0-indexed arrays nums and cost consisting each of n positive integers.
+ *
+ *
+ * You can do the following operation any number of times:
+ *
+ *
+ * Increase or decrease any element of the array nums by 1.
+ *
+ * The cost of doing one operation on the ith element is cost[i].
+ *
+ *
+ * Return the minimum total cost such that all the elements of the array nums become equal.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: nums = [1,3,5,2], cost = [2,3,1,14]
+ * Output: 8
+ * Explanation: We can make all the elements equal to 2 in the following way:
+ * - Increase the 0th element one time. The cost is 2.
+ * - Decrease the 1st element one time. The cost is 3.
+ * - Decrease the 2nd element three times. The cost is 1 + 1 + 1 = 3.
+ * The total cost is 2 + 3 + 3 = 8.
+ * It can be shown that we cannot make the array equal with a smaller cost.
+ *
+ * Example 2:
+ *
+ * Input: nums = [2,2,2,2,2], cost = [4,2,8,1,3]
+ * Output: 0
+ * Explanation: All the elements are already equal, so no operations are needed.
+ *
+ *
+ *
+ * Constraints:
+ *
+ *
+ * n == nums.length == cost.length
+ *
+ * 1 &lt;= n &lt;= 105
+ *
+ * 1 &lt;= nums[i], cost[i] &lt;= 106
+ *
+ * Test cases are generated in a way that the output doesn't exceed 253-1
+ * </pre>
+ *
+ * <h2>Hints to Solve</h2>
+ * Hint 1: Changing the elements into one of the numbers already existing in the array nums is optimal.
+ * Hint 2: Try finding the cost of changing the array into each element, and return the minimum value.
+ *
+ * <h2>Approach</h2>
+ * Think about the category (Array, Binary Search, Greedy, Sorting, Prefix Sum).
+ *
+ * @see <a href="https://leetcode.com/problems/minimum-cost-to-make-array-equal/">LeetCode #2448</a>
+ */
+public class MinimumCostToMakeArrayEqual {
+
+    /**
+     * Solves the problem and Solve.
+     *
+     * @param input the input (Object)
+     * @return the computed Object result
+     */
+    public Object solve(Object input) {
+        throw new UnsupportedOperationException("Not yet implemented: Minimum Cost to Make Array Equal");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("=== MinimumCostToMakeArrayEqual ===");
+        MinimumCostToMakeArrayEqual sol = new MinimumCostToMakeArrayEqual();
+        System.out.println(sol.solve(null));
+    }
+}

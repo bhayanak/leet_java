@@ -1,0 +1,93 @@
+package org.leetcode.medium;
+
+
+/**
+ * <b>#1169 - Invalid Transactions</b>
+ *
+ * <p><b>Difficulty:</b> Medium</p>
+ * <p><b>Category:</b> Array, Hash Table, String, Sorting</p>
+ *
+ * <h2>Problem Description</h2>
+ * <pre>
+ * A transaction is possibly invalid if:
+ *
+ *
+ * the amount exceeds $1000, or;
+ *
+ * if it occurs within (and including) 60 minutes of another transaction with the same name in a different city.
+ *
+ * You are given an array of strings transaction where transactions[i] consists of comma-separated values representing the name, time (in minutes), amount, and city of the transaction.
+ *
+ *
+ * Return a list of transactions that are possibly invalid. You may return the answer in any order.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: transactions = ["alice,20,800,mtv","alice,50,100,beijing"]
+ * Output: ["alice,20,800,mtv","alice,50,100,beijing"]
+ * Explanation: The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too.
+ *
+ * Example 2:
+ *
+ * Input: transactions = ["alice,20,800,mtv","alice,50,1200,mtv"]
+ * Output: ["alice,50,1200,mtv"]
+ *
+ * Example 3:
+ *
+ * Input: transactions = ["alice,20,800,mtv","bob,50,1200,mtv"]
+ * Output: ["bob,50,1200,mtv"]
+ *
+ *
+ *
+ * Constraints:
+ *
+ *
+ * transactions.length &lt;= 1000
+ *
+ * Each transactions[i] takes the form "{name},{time},{amount},{city}"
+ *
+ * Each {name} and {city} consist of lowercase English letters, and have lengths between 1 and 10.
+ *
+ * Each {time} consist of digits, and represent an integer between 0 and 1000.
+ *
+ * Each {amount} consist of digits, and represent an integer between 0 and 2000.
+ * </pre>
+ *
+ * <h2>Hints to Solve</h2>
+ * Hint 1: Split each string into four arrays.
+ * Hint 2: For each transaction check if it's invalid, you can do this with just a loop with help of the four arrays generated on step 1.
+ * Hint 3: At the end you perform O(N ^ 2) operations.
+ *
+ * <h2>Approach</h2>
+ * Think about the category (Array, Hash Table, String, Sorting).
+ * Start brute-force, then optimise: sorting, hashing, two pointers,
+ * sliding window, binary search, backtracking, DP, or graph traversal.
+ *
+ * <h2>Complexity</h2>
+ * Time: see implementation  |  Space: see implementation
+ *
+ * @see <a href="https://leetcode.com/problems/invalid-transactions/">LeetCode #1169</a>
+ */
+public class InvalidTransactions {
+
+    /**
+     * TODO: Implement "Invalid Transactions".
+     * Replace parameter and return types with the actual signature.
+     */
+    public Object solve(Object input) {
+        throw new UnsupportedOperationException("Not yet implemented: Invalid Transactions");
+    }
+
+    /**
+     * Runs sample test cases. Execute:
+     * <pre>javac InvalidTransactions.java &amp;&amp; java org.leetcode.medium.InvalidTransactions</pre>
+     */
+    public static void main(String[] args) {
+        System.out.println("=== InvalidTransactions ===");
+        InvalidTransactions sol = new InvalidTransactions();
+        System.out.println(sol.solve(null));
+    }
+}

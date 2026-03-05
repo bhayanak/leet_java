@@ -1,0 +1,105 @@
+package org.leetcode.hard;
+
+
+/**
+ * <b>#3123 - Find Edges in Shortest Paths</b>
+ *
+ * <p><b>Difficulty:</b> Hard</p>
+ * <p><b>Category:</b> Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path</p>
+ *
+ * <h2>Problem Description</h2>
+ * <pre>
+ * You are given an undirected weighted graph of n nodes numbered from 0 to n - 1. The graph consists of m edges represented by a 2D array edges, where edges[i] = [ai, bi, wi] indicates that there is an edge between nodes ai and bi with weight wi.
+ *
+ *
+ * Consider all the shortest paths from node 0 to node n - 1 in the graph. You need to find a boolean array answer where answer[i] is true if the edge edges[i] is part of at least one shortest path. Otherwise, answer[i] is false.
+ *
+ *
+ * Return the array answer.
+ *
+ *
+ * Note that the graph may not be connected.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: n = 6, edges = [[0,1,4],[0,2,1],[1,3,2],[1,4,3],[1,5,1],[2,3,1],[3,5,3],[4,5,2]]
+ *
+ *
+ * Output: [true,true,true,false,true,true,true,false]
+ *
+ *
+ * Explanation:
+ *
+ *
+ * The following are all the shortest paths between nodes 0 and 5:
+ *
+ *
+ * The path 0 -&gt; 1 -&gt; 5: The sum of weights is 4 + 1 = 5.
+ *
+ * The path 0 -&gt; 2 -&gt; 3 -&gt; 5: The sum of weights is 1 + 1 + 3 = 5.
+ *
+ * The path 0 -&gt; 2 -&gt; 3 -&gt; 1 -&gt; 5: The sum of weights is 1 + 1 + 2 + 1 = 5.
+ *
+ * Example 2:
+ *
+ * Input: n = 4, edges = [[2,0,1],[0,1,1],[0,3,4],[3,2,2]]
+ *
+ *
+ * Output: [true,false,false,true]
+ *
+ *
+ * Explanation:
+ *
+ *
+ * There is one shortest path between nodes 0 and 3, which is the path 0 -&gt; 2 -&gt; 3 with the sum of weights 1 + 2 = 3.
+ *
+ *
+ *
+ * Constraints:
+ *
+ *
+ * 2 &lt;= n &lt;= 5 * 104
+ *
+ * m == edges.length
+ *
+ * 1 &lt;= m &lt;= min(5 * 104, n * (n - 1) / 2)
+ *
+ * 0 &lt;= ai, bi &lt; n
+ *
+ * ai != bi
+ *
+ * 1 &lt;= wi &lt;= 105
+ *
+ * There are no repeated edges.
+ * </pre>
+ *
+ * <h2>Hints to Solve</h2>
+ * Hint 1: Find all the shortest paths starting from nodes 0 and <code>n - 1</code> to all other nodes.
+ * Hint 2: How to use the above calculated shortest paths to check if an edge is part of at least one shortest path from 0 to <code>n - 1</code>?
+ *
+ * <h2>Approach</h2>
+ * Think about the category (Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path).
+ *
+ * @see <a href="https://leetcode.com/problems/find-edges-in-shortest-paths/">LeetCode #3123</a>
+ */
+public class FindEdgesInShortestPaths {
+
+    /**
+     * Solves the problem and Solve.
+     *
+     * @param input the input (Object)
+     * @return the computed Object result
+     */
+    public Object solve(Object input) {
+        throw new UnsupportedOperationException("Not yet implemented: Find Edges in Shortest Paths");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("=== FindEdgesInShortestPaths ===");
+        FindEdgesInShortestPaths sol = new FindEdgesInShortestPaths();
+        System.out.println(sol.solve(null));
+    }
+}
