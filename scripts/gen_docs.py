@@ -127,7 +127,7 @@ def scan_difficulty(difficulty: str) -> list:
         info['class_name'] = java_file.stem
         info['difficulty'] = info.get('difficulty') or difficulty.capitalize()
         info['filename'] = java_file.name
-        info['rel_path'] = f"../src/main/java/org/leetcode/{difficulty}/{java_file.name}"
+        info['rel_path'] = f"https://github.com/bhayanak/leet_java/blob/main/src/main/java/org/leetcode/{difficulty}/{java_file.name}"
         
         # Get the method-level @Explanation if class-level is missing
         if not info.get('explanation'):
