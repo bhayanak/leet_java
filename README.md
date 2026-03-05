@@ -2,6 +2,8 @@
 
 3 018 solved LeetCode problems in Java, organised by difficulty.
 
+# Check Demo at : https://bhayanak.github.io/leet_java/
+
 ## Structure
 
 ```
